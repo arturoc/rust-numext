@@ -138,7 +138,7 @@ impl HashConstructor {
         let part = quote!(
             /// Fixed hash type.
             #[cfg(feature = #feature)]
-            #[derive(Clone)]
+            #[derive(Clone, Copy)]
             pub struct #name(pub #inner_type);
         );
         self.attach_hash(part);

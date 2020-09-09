@@ -161,7 +161,7 @@ impl UintConstructor {
         let part = quote!(
             /// Fixed non-negative integer type.
             #[cfg(feature = #feature)]
-            #[derive(Clone)]
+            #[derive(Clone, Copy)]
             pub struct #name(pub #inner_type);
         );
         self.attach_uint(part);

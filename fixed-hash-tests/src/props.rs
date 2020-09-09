@@ -16,7 +16,7 @@ use proptest::prelude::RngCore;
 use proptest::strategy::{NewTree, Strategy, ValueTree};
 use proptest::test_runner::{TestRng, TestRunner};
 
-#[derive(Clone, PartialEq, PartialOrd, Eq, Ord)]
+#[derive(Clone, Copy, PartialEq, PartialOrd, Eq, Ord)]
 pub struct H256Bytes {
     pub inner: [u8; 32],
 }

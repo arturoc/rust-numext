@@ -1,6 +1,6 @@
 [package]
 name = "numext-fixed-uint-core"
-version = "0.1.4"
+version = "0.1.6"
 authors = ["Cryptape Technologies <contact@cryptape.com>"]
 edition = "2018"
 description = "A internal crate used by numext-fixed-uint."
@@ -12,8 +12,8 @@ license = "Apache-2.0 OR MIT"
 
 
 [dependencies]
-constructor = { package = "numext-constructor", version = "=0.1.4", path = "../../constructor" }
-failure = "~0.1"
+constructor = { package = "numext-constructor", version = "=0.1.6", path = "../../constructor" }
+thiserror = "~1.0"
 rand = { version = "~0.7", optional = true }
 heapsize = { version = "~0.4", optional = true }
 serde = { version = "~1.0", optional = true }
